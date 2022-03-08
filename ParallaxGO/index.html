@@ -45,7 +45,7 @@ As much as you try to close your eyes, the invasive, summer sun pierces through 
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 In your hand, your [[Phone]] sat dormant.
 
@@ -59,7 +59,7 @@ In the corner of your room sat your [[Trackpad]]. (if:$breakfastHad is false)[Yo
 (if: $choresChecked is true)[(if: $timeLaundryDone is 1)[[[I should take care of that laundry-&gt;Laundry 1]]](else-if: $laundryDone is true)[](else-if: $timePassed &gt; $timeLaundryDone)[[[I should check on the laundry-&gt;Laundry 2]]]]</tw-passagedata><tw-passagedata pid="5" name="Closet" tags="" position="1029,634" size="100,100">{(if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 You pulled open the door, past the mirror, and checked on your clothes. An array of clothing, generally hand-me-downs or things bought from a secondhand store, hung from hangars, or were sitting inside the drawers, that comprised the lower half of your closet. You could probably dig something out of here(if: $timePassed is 1)[, but you wouldn&#39;t really need to- You&#39;re just going downstairs to have breakfast. If you do plan on going out, though, it would save some time..].
 
@@ -67,7 +67,7 @@ You pulled open the door, past the mirror, and checked on your clothes. An array
 [[Maybe not now...-&gt;Bedroom]]</tw-passagedata><tw-passagedata pid="6" name="Mirror" tags="" position="408,403" size="100,100">{(if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 You stepped up to the mirror on your closet&#39;s door, looking at yourself in the mirror.
 
@@ -80,7 +80,7 @@ You stepped up to the mirror on your closet&#39;s door, looking at yourself in t
 [[Back-&gt;Bedroom]]</tw-passagedata><tw-passagedata pid="7" name="Trackpad" tags="" position="632,328" size="100,100">{(if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 The equivalent of a multi-directional treadmill sat in the corner of your room, currently inert. On top of the mechanism sat a pair of Parallax Glasses. 
 
@@ -120,7 +120,7 @@ You used this to keep track of how much you moved throughout the day- Something 
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 (if:$timePassed is 1)[You and your friends used this to keep track of one anothers&#39; movements through the city- With [[Parallax GO]], that was rather important. Everyone was in their own houses at the moment. You could probably visit them- If you weren&#39;t already obligated downstairs and have breakfast with Mom.]
 (if:$timePassed is 2)[You&#39;ve already spotted everyone moving about town right about now.]
@@ -176,7 +176,7 @@ She brushed her hair to the side, and gave you a kiss goodbye just as you got up
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 You left your [[Phone]] on the dining table set for three. (if: $timePassed &lt; 4)[Sunlight pours through the window onto the empty dining table.](else-if: $timePassed &lt; 10)[The sunlight through the window has faded, but the sky outside still shone bright blue.](else-if: $timePassed is 12)[The red light of the sun on the horizon invades the room from the window- Bathing you in a warm glow.]
 
@@ -190,7 +190,7 @@ Up the stairs, you could head back to your [[Bedroom]], but you didn&#39;t reall
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 (if: $booksFound is false)[Check for versions of &quot;Fahrenheit 999&quot; in book store](else:)[~~Check for versions of &quot;Fahrenheit 999&quot; in book store~~]
 (if: $kitchenCleaned is false)[Clean the kitchen](else:)[~~Clean the kitchen~~]
@@ -202,7 +202,7 @@ Up the stairs, you could head back to your [[Bedroom]], but you didn&#39;t reall
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 Luckily, you remembered to bring your [[Phone]] with you before leaving.
 
@@ -220,7 +220,7 @@ You pick up the painted, metal frame with lenses, turning them in your hand, bef
 [[Back-&gt;Bedroom]]</tw-passagedata><tw-passagedata pid="20" name="Play Remotely" tags="" position="764,263" size="100,100">{(if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 Anywhere in the world, right here in your bedroom...
 
@@ -791,7 +791,7 @@ He&#39;s also the most mature of the group, being that he&#39;s been out of coll
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 You didn&#39;t think you&#39;d be coming back here over summer break- But admittedly, the school is fun to explore when it&#39;s completely empty. Conveniently enough- You know that your history teacher, whose class is on the first floor, always accidentally leaves his windows unlocked. It&#39;s not like you were going to break anything- It&#39;s just peaceful, to walk the halls of a building that you&#39;re probably tresspassing on.
 
@@ -800,7 +800,7 @@ You didn&#39;t think you&#39;d be coming back here over summer break- But admitt
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 The 16th Street Mall is probably the most chaotic place at this time of year. People bustle about on trolleys and scooters, as well as on foot, from one shop to the other, gathering up supplies for the summer- Camping gear, groceries, pool care equipment, pools, beach balls, all sorts of things, all shining on advertisements from screens that shine above the street. 
 
@@ -811,7 +811,7 @@ You&#39;ve learned better to listen to those advertisements, anyways- Most of th
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 The &quot;Junk Yard&quot; is more like a recycling plant- Where things go to be born again as something else. 
 
@@ -823,7 +823,7 @@ Garbage and waste was eventually sorted through and left in biodegradable piles 
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 People mull about in front of the movie theater, generally attending to watch movies the &quot;Old&quot; way (Since streaming is still on the rise). The movies don&#39;t really function like they did back then- At least, as much as your history teacher has taught.
 
@@ -834,7 +834,7 @@ Instead of film reels, the theater uses digital screens. They tend to pop and li
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 The book store was on the corner of 18th and Naramil St., and towered over the street corner, despite being only two stories out of the 10 that made up the whole building. Offices sat squarely above the book store, and nearby, city street vendors announced their various trinkets, meals and snacks that they had to provide.
 
@@ -1043,7 +1043,7 @@ tess2: ./audio/SundayGrey.mp3</tw-passagedata><tw-passagedata pid="63" name="Pho
 (if: $timePassed &lt; 4)[(enchant:?page,(bg:#515151))(track: &#39;morning&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 8)[(enchant:?page,(text-colour:black)+(bg:#dddf79))(track: &#39;morning&#39;, &#39;stop&#39;)(track: &#39;afternoon&#39;,&#39;play&#39;)]
 (else-if: $timePassed &lt; 10)[(enchant:?page,(text-colour:black)+(bg:#e29c1b))(track: &#39;afternoon&#39;,&#39;play&#39;)]
-(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
+(else-if: $timePassed &lt; 14)[(enchant:?page,(text-colour:black)+(bg:#c05301))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)](else:)[(enchant:?page,(text-colour:white)+(bg:#380653))(track:&#39;afternoon&#39;,&#39;stop&#39;)(track: &#39;evening&#39;,&#39;play&#39;)]
 (if: $timePassed &gt;= 14)[(go-to:&quot;It&#39;s getting late&quot;)]}
 
 (if:$timePassed is 1)[You opened up the phone, and quickly swiped the pattern password. You could tell already, that most of your friends were still asleep- Probably enjoying the first few days of summer, being able to sleep in without worry of school. 
